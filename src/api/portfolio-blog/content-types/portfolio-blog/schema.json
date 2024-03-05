@@ -4,7 +4,8 @@
   "info": {
     "singularName": "portfolio-blog",
     "pluralName": "portfolio-blogs",
-    "displayName": "portfolio-blog"
+    "displayName": "portfolio-blog",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,10 +13,6 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
-    },
-    "date_published": {
       "type": "string",
       "required": true
     },
@@ -48,6 +45,10 @@
       "relation": "manyToMany",
       "target": "api::portfolio-blog-tag.portfolio-blog-tag",
       "mappedBy": "portfolio_blogs"
+    },
+    "date_published": {
+      "type": "date",
+      "required": true
     }
   }
 }

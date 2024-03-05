@@ -774,13 +774,13 @@ export interface ApiPortfolioBlogPortfolioBlog extends Schema.CollectionType {
     singularName: 'portfolio-blog';
     pluralName: 'portfolio-blogs';
     displayName: 'portfolio-blog';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
-    date_published: Attribute.String & Attribute.Required;
     excerpt: Attribute.Text & Attribute.Required;
     content: Attribute.Blocks & Attribute.Required;
     author: Attribute.String &
@@ -801,6 +801,7 @@ export interface ApiPortfolioBlogPortfolioBlog extends Schema.CollectionType {
       'manyToMany',
       'api::portfolio-blog-tag.portfolio-blog-tag'
     >;
+    date_published: Attribute.Date & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
