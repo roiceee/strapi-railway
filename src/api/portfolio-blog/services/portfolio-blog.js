@@ -1,7 +1,9 @@
+'use strict';
+
 /**
  * portfolio-blog service
  */
 
-const { factories } = require('@strapi/strapi')
+const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = factories.createCoreService('api::portfolio-blog.portfolio-blog');
+module.exports = createCoreService('api::portfolio-blog.portfolio-blog');

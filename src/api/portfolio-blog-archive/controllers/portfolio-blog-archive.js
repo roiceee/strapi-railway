@@ -1,9 +1,9 @@
+'use strict';
+
 /**
  * portfolio-blog-archive controller
  */
 
-const { factories } = require("@strapi/strapi");
+const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = factories.createCoreController(
-  "api::portfolio-blog-archive.portfolio-blog-archive"
-);
+module.exports = createCoreController('api::portfolio-blog-archive.portfolio-blog-archive');
