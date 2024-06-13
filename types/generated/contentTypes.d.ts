@@ -802,7 +802,8 @@ export interface ApiPortfolioBlogPortfolioBlog extends Schema.CollectionType {
       'api::portfolio-blog-tag.portfolio-blog-tag'
     >;
     date_published: Attribute.Date & Attribute.Required;
-    slug: Attribute.UID<'api::portfolio-blog.portfolio-blog', 'title'>;
+    slug: Attribute.UID<'api::portfolio-blog.portfolio-blog', 'title'> &
+      Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
