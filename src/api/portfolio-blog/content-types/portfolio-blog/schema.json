@@ -49,6 +49,10 @@
     "date_published": {
       "type": "date",
       "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }
